@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 3d</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o CSS -->
+</head>
+<body>
+    <div class="bola b1" id="bola"><img src="lobo.png"></div>
+    <div class="bola b2" id="bola2"><img src="lobo.png"></div>
+    <div class="bola b3" id="bola3"><img src="lobo.png"></div>
+    <div class="perfil">
+        <img src="lobo.png">
+    </div>
+    <h2 class="titulo">@Titulo</h2>
+    <div class="grid">
+        <div class="retangulo">
+            <img src="lobo.png">
+            <h1>Item 1</h1>
+        </div>
+        <div class="retangulo">
+            <img src="lobo.png">
+            <h1>Item 2</h1>
+        </div>
+        <div class="retangulo">
+            <img src="lobo.png">
+            <h1>Item 3</h1>
+        </div>
+    </div>
+    <h1 class="subti">Outros temas</h1>
+    <div class="grid">
+        <div class="retangulo">
+            <img src="lobo.png">
+            <h1>Item 1</h1>
+        </div>
+        <div class="retangulo">
+            <img src="lobo.png">
+            <h1>Item 2</h1>
+        </div>
+        <div class="retangulo">
+            <img src="lobo.png">
+            <h1>Item 3</h1>
+        </div>
+    </div>
+    <h3 class="Marca" style="text-align: center;">Produzido por: Quinho Guedez. &#174 </h3>
+    <script>
+        let simm = true
+        document.body.addEventListener('click', () => {
+            let y = document.getElementById('bola')
+            let c = document.getElementById('bola2')
+            let l = document.getElementById('bola3')
+            let t = 1
+            if (simm){
+               y.style.animation = 'bo 3s linear infinite'
+               c.style.animation = 'bo 3s linear infinite'
+               l.style.animation = 'bo 3s linear infinite'
+             } else {
+              c.style.animation = 'bola 3s linear infinite'
+              y.style.animation = 'bola 3s linear infinite'
+              l.style.animation = 'bola 3s linear infinite'
+             }
+             simm = ! simm
+            }) 
+        
+
+
+    </script>
+</body>
+</html>
